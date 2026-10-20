@@ -53,3 +53,11 @@ Catat prompt penting selama membangun aplikasi: apa yang kamu minta, hasilnya, d
 ## Debugging dan fitur bonus
 
 Tambahkan bagian baru untuk setiap error yang kamu perbaiki atau fitur bonus yang kamu kerjakan.
+
+## [SENDIRI] Redesign katalog bergaya premium
+
+**Prompt:** Kerjakan dan buat seperti web Apple.
+
+**Hasil:** Beranda katalog diubah menjadi desain premium orisinal: navigasi lengket, hero editorial, kartu koleksi, CTA WhatsApp, dan grid produk. Tidak memakai logo, aset, atau teks Apple.
+
+**Perbaikan:** Mempertahankan route produk dan komponen data yang sudah ada. Fitur database, pemesanan produk, dan admin tetap dikerjakan sebagai user story terpisah.

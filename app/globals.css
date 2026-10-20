@@ -22,6 +22,10 @@
   --color-bahaya: #b42318;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 html {
   color: var(--color-teks);
   background: var(--color-latar);

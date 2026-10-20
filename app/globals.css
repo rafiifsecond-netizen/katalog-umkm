@@ -27,7 +27,61 @@ html {
   background: var(--color-latar);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 :focus-visible {
   outline: 3px solid var(--color-utama);
   outline-offset: 2px;
+}
+
+.landing-hero {
+  background: radial-gradient(circle at 74% 22%, #dff3e6 0, transparent 25rem), #f6f7f5;
+}
+
+.hero-photo img {
+  animation: photo-in 700ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.category-tile {
+  position: relative;
+  display: block;
+  min-height: 18rem;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.category-tile img {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.category-tile:hover img {
+  transform: scale(1.05);
+}
+
+.category-tile span {
+  position: absolute;
+  inset: auto 1.25rem 1.25rem;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 12px rgb(0 0 0 / 0.5);
+}
+
+@keyframes photo-in {
+  from { opacity: 0; transform: scale(1.04); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto;
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
 }

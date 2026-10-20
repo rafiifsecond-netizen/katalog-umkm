@@ -76,5 +76,5 @@ Urutan yang disarankan: US-01, US-02, US-03, US-04, US-05, US-06, lalu fitur bon
 
 - **Nama usaha:** Toko Contoh UMKM Nusantara
 - **Pembuat:** Tim Pengembang UMKM
-- **Link aplikasi:** https://katalog-umkm.vercel.app
+- **Link aplikasi:** https://katalog-umkm-rafiifsecond-netizen.vercel.app
 - **Fitur bonus yang dikerjakan:** US-07 (List Produk), US-08 (Tambah Produk), US-09 (Ubah Produk), US-10 (Hapus Produk), US-11 (Filter Kategori & Live Search), US-12 (Pilih Jumlah Pesan), US-13 (PWA), US-15 (Urutkan Produk), US-16 (Paginasi / Muat Lebih Banyak), US-17 (Produk Terkait di Detail), US-26 (Metadata SEO), US-27 (sitemap.xml & robots.txt), US-28 (Halaman 404 & Loading Custom), US-30 (Dashboard Ringkasan Admin), US-35 (Ekspor Produk ke CSV), K-6 sampai K-13 (Keamanan Lanjutan)

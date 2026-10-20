@@ -1,23 +1,20 @@
 import Link from "next/link";
 import { formatRupiah } from "@/lib/format";
 
-export default function KartuProduk({ produk }) {
+export default function KartuProduk({ produk, unggulan = false }) {
   return (
-    <Link
-      href={`/produk/${produk.id}`}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-garis bg-latar"
-    >
-      <img
-        src={produk.foto_url}
-        alt={produk.nama}
-        className="aspect-square w-full bg-permukaan object-cover"
-      />
-      <div className="flex flex-1 flex-col gap-2 p-3">
-        <p className="text-xs text-teks-lembut">{produk.kategori}</p>
-        <h3 className="font-semibold leading-snug group-hover:text-utama">{produk.nama}</h3>
-        <p className="mt-auto self-start rounded-md bg-harga-latar px-2 py-0.5 text-sm font-bold text-harga">
-          {formatRupiah(produk.harga)}
-        </p>
+    <Link href={`/produk/${produk.id}`} className="group block">
+      <div className="overflow-hidden rounded-[1.5rem] bg-permukaan">
+        <img
+          src={produk.foto_url}
+          alt={produk.nama}
+          className={`w-full object-cover transition duration-500 group-hover:scale-105 ${unggulan ? "aspect-4/5 p-5" : "aspect-square p-3"}`}
+        />
+      </div>
+      <div className="px-1 pb-1 pt-4">
+        <p className="text-xs font-bold tracking-wide text-teks-lembut">{produk.kategori}</p>
+        <h3 className="mt-1 font-bold leading-snug tracking-[-0.02em] group-hover:text-utama">{produk.nama}</h3>
+        <p className="mt-2 text-sm font-bold text-harga">{formatRupiah(produk.harga)}</p>
       </div>
     </Link>
   );
